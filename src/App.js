@@ -8,7 +8,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
-
+import Example from './components/Graph_New';
 
 
 
@@ -38,7 +38,7 @@ const App = () => {
 
     return (
         <AppProvider>
-            <div className='container'>
+            <div className='container '>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row mt-3'>  
                     <div className='col-sm'>
@@ -58,7 +58,11 @@ const App = () => {
                     </div>
                     <div className='col-sm'>
                         <ExpenseTotal data={symbol}/>
+                        
                     </div>
+                </div>
+                <div>
+                <Example />
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>
@@ -78,3 +82,13 @@ const App = () => {
 };
 
 export default App;
+
+
+// "@amcharts/amcharts5": "^5.0.0",
+// "@amcharts/amcharts5/xy": "^5.0.0",
+// "@amcharts/amcharts5/themes/Animated": "^5.0.0"
+
+
+
+
+
