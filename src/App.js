@@ -9,6 +9,7 @@ import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
 import Example from './components/Graph_New';
+import Graph_gen from './components/Graph_generation';
 
 
 
@@ -40,6 +41,20 @@ const App = () => {
         <AppProvider>
             <div className='container '>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
                 <div className='row mt-3'>  
                     <div className='col-sm'>
                         <select className="form-select form-select-md alert alert-secondary bg-black bg-opacity-100 text-white hover: bg-opacity-20" value={newCurrency} onChange={handleCurrencyChange} required>
@@ -63,6 +78,7 @@ const App = () => {
                 </div>
                 <div>
                 <Example />
+                <Graph_gen />
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>

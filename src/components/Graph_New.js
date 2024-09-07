@@ -408,21 +408,21 @@ const data = [
     Total_Cholestrol: 200,
 
   },
-  {
-    name:'24 Jan',
-    Total_Cholestrol: 190,
+  // {
+  //   name:'24 Jan',
+  //   Total_Cholestrol: 190,
 
-  },
+  // },
   // {
   //   name:'03 Jan 2021',
   //   Total_Cholestrol: 80,
 
   // },
-  {
-    name:'18 Jan',
-    Total_Cholestrol: 146,
+  // {
+  //   name:'18 Jan',
+  //   Total_Cholestrol: 146,
 
-  },
+  // },
   // {
   //   name:'13 Mar',
   //   Tota_Cholestrol: 34,
@@ -453,16 +453,16 @@ const data = [
     Total_Cholestrol: 198,
 
   },
-  {
-    name:'06 Feb',
-    Total_Cholestrol: 204,
+  // {
+  //   name:'06 Feb',
+  //   Total_Cholestrol: 204,
 
-  },
-  {
-    name:'30 Jul',
-    Total_Cholestrol: 134,
+  // },
+  // {
+  //   name:'30 Jul',
+  //   Total_Cholestrol: 134,
 
-  },
+  // },
   {
     name:'31 Dec',
     Total_Cholestrol: 212,
@@ -498,7 +498,7 @@ export default class Example extends PureComponent {
   // #fff1e5
   render() {
     return (
-      <div style={{ backgroundColor: '#F2B47E', padding: '20px' }}>
+      <div style={{ backgroundColor: '#D8EDF2', padding: '20px' }}>
         <ResponsiveContainer width="100%" height={400}>
           <LineChart
             width={500}
@@ -514,20 +514,20 @@ export default class Example extends PureComponent {
             <CartesianGrid strokeDasharray="9 9" stroke="black" strokeOpacity={0.3} />
             <XAxis dataKey="name" stroke="black" />
             <YAxis stroke="black" />
-            <Tooltip contentStyle={{ backgroundColor: 'black', opacity:0.9 ,color:'white'}} />
+            <Tooltip contentStyle={{ backgroundColor: 'white', opacity:'0.9' ,color:'black',borderRadius: '30px'}} />
             <Legend />
 
             {/* Reference Areas for Shading */}
-            <ReferenceArea x1="24 Jan" x2="18 Jan" y1={0} y2={20} fill="#04ADBF" fillOpacity={1}>
-  <Label value="Set-1" position="center" fill='white' fontSize={15} />
+            <ReferenceArea x1="24 Jan" x2="18 Jan" y1={0} y2={20} fill="#04ADBF" fillOpacity={0.7}>
+  <Label value="Med Set-1" position="center" fill='white' fontSize={15}    />
 </ReferenceArea>
-            <ReferenceArea x1="23 Jul" x2="10 Jan 2022" y1={0} y2={20} fill="#03402F" fillOpacity={1} >
-            <Label value="Set-2" position="center" fill='white' fontSize={15} />
+            <ReferenceArea x1="23 Jul" x2="10 Jan 2022" y1={0} y2={20} fill="#0D0D0D" fillOpacity={0.9} >
+            <Label value="Med Set-2" position="center" fill='white' fontSize={15} />
 </ReferenceArea>
-            <ReferenceArea x1="10 Jan 2022" x2="26 Apr" y1={0} y2={20} fill="#BC04BF" fillOpacity={1} >
-            <Label value="Set-3" position="center" fill='white' fontSize={15} />
+            <ReferenceArea x1="10 Jan 2022" x2="26 Apr" y1={0} y2={20} fill="#92D050" fillOpacity={0.9} >
+            <Label value="Med Set-3" position="center" fill='white' fontSize={15} />
 </ReferenceArea>
-            <ReferenceArea x1="01 Jan 2021" x2="26 Apr" y1={200} y2={380} fill="#D90718" fillOpacity={0.7} />
+            <ReferenceArea x1="01 Jan 2021" x2="26 Apr" y1={200} y2={380} fill="#D90718" fillOpacity={0.8} />
             {/* <ReferenceArea x1="01 Jan 2021" x2="26 Apr" y1={500} y2={2500} fill="#D90718" fillOpacity={0.7} /> */}
 
             {/* Reference Line for Y value 7500 */}
